@@ -63,5 +63,6 @@
 - PR & 코드리뷰 설명글 : https://devlog-wjdrbs96.tistory.com/231
 
 
----
-참고 : https://github.com/ellynhan/challenge100-codingtest-study/tree/master
+## 📗참고 레퍼런스
+https://github.com/ellynhan/challenge100-codingtest-study/tree/master
+https://github.com/Stendhalsynd/baekjoon-algorithm-study?tab=readme-ov-file
