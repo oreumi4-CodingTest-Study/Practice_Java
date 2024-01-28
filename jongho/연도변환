@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+
+		int y = Integer.parseInt(scanner.nextLine()); //변환하고자 하는 연도 불러오기
+
+		System.out.println(y - 543); //단순히 빼 보았습니다...!
+
+	}
+}
+
