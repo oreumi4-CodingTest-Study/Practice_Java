@@ -29,42 +29,38 @@ public class BOJ_20920 {
             }
         }
 
-        String[][] memoWords = new String[map.size()][3];
+        Object[][] memoWords = new Object[map.size()][3];
         int i = 0;
         for (String key : map.keySet()) {
-            memoWords[i][0] = Integer.toString(map.get(key));   // 1순위 : 단어 수
-            memoWords[i][1] = Integer.toString(key.length());   // 2순위 : 단어 길이
+            memoWords[i][0] = map.get(key);   // 1순위 : 단어 수
+            memoWords[i][1] = key.length();   // 2순위 : 단어 길이
             memoWords[i][2] = key;                              // 3순위 : 단어
             i++;
         }
 
         // memoWords 우선순위부터 정렬
-        Arrays.sort(memoWords, new Comparator<String[]>() {
+        Arrays.sort(memoWords, new Comparator<Object[]>() {
             @Override
-            public int compare(String[] o1, String[] o2) {
+            public int compare(Object[] o1, Object[] o2) {
                 // 1순위 비교
-                int o1_0 = Integer.parseInt(o1[0]);
-                int o2_0 = Integer.parseInt(o2[0]);
-                int o1_1 = Integer.parseInt(o1[1]);
-                int o2_1 = Integer.parseInt(o2[1]);
-                if(o1_0 == o2_0) {
+                if (o1[0] == o2[0]) {
                     // 1순위 같으면 2순위 비교
-                    if(o1_1 == o2_1){
+                    if (o1[1] == o2[1]) {
                         // 2순위 같으면 3순위 정렬 (오름차순)
-                        return o1[2].compareTo(o2[2]);
+                        return ((String) o1[2]).compareTo((String) o2[2]);
                     } else {
                         // 2순위 다르면 2순위 정렬 (내림차순)
-                        return o2_1 - o1_1;
+                        return (int) o2[1] - (int) o1[1];
                     }
-                } else{
+                } else {
                     // 1순위 다르면 1순위 정렬 (내림차순)
-                    return o2_0 - o1_0;
+                    return (int) o2[0] - (int) o1[0];
                 }
             }
         });
 
         for (int j = 0; j < memoWords.length; j++) {
-            bw.write(memoWords[j][2]+"\n");
+            bw.write(memoWords[j][2] + "\n");
         }
 
         bw.flush();
