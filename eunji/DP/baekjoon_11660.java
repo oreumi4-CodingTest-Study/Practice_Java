@@ -1,4 +1,4 @@
-// ±¸°£ ÇÕ ±¸ÇÏ±â 5
+// êµ¬ê°„ í•© êµ¬í•˜ê¸° 5
 import java.io.*;
 import java.util.*;
 public class baekjoon_11660 {
@@ -17,7 +17,7 @@ public class baekjoon_11660 {
 				arr[i][j] = Integer.parseInt(st1.nextToken());
 			}
 		}
-		// ¹Ì¸® dp ¹è¿­¿¡ (i,j)±îÁöÀÇ ÇÕµéÀ» ±¸ÇØ³õ±â
+		// ë¯¸ë¦¬ dp ë°°ì—´ì— (i,j)ê¹Œì§€ì˜ í•©ë“¤ì„ êµ¬í•´ë†“ê¸°
 		for(int i =1; i<=N; i++) {
 			for(int j =1; j<=N; j++) {
 				dp[i][j] = dp[i-1][j] + dp[i][j-1] - dp[i-1][j-1] + arr[i][j];
