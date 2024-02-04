@@ -1,3 +1,5 @@
+package M01.W3;
+
 import java.util.Arrays;
 import java.util.Scanner;
 

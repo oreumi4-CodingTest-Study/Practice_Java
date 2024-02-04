@@ -1,3 +1,5 @@
+package M01.W3;
+
 import java.util.Scanner;
 
 public class BOJ_25206 {    // 너의 평점은
