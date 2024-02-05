@@ -5,21 +5,21 @@ public class baekjoon_9095 {
 	static int T;
 	
 	public static void main(String[] args) throws IOException{
-		// Á¤¼ö n À» 123ÀÇ ÇÕÀ¸·Î ³ªÅ¸³»´Â ¹æ¹ıÀÇ ¼ö Ãâ·Â
+		// ì •ìˆ˜ n ì„ 123ì˜ í•©ìœ¼ë¡œ ë‚˜íƒ€ë‚´ëŠ” ë°©ë²•ì˜ ìˆ˜ ì¶œë ¥
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		T = Integer.parseInt(br.readLine());
-		int arr[] = new int[11]; //n+2¸¦ ÇÏ¸é ¾ÈµÇ´Â ÀÌÀ¯? ArrayIndexOutOfBounds°¡ ¶ä
+		int arr[] = new int[11]; //n+2ë¥¼ í•˜ë©´ ì•ˆë˜ëŠ” ì´ìœ ? ArrayIndexOutOfBoundsê°€ ëœ¸
 		arr[0] = 0;
 		arr[1] = 1;
 		arr[2] = 2;
 		arr[3] = 4;
 		for(int a=0; a<T; a++) {
 			int n = Integer.parseInt(br.readLine());
-			// 4¸¦ ¿¹·Î µé¸é
-			// 1+3 => 3ÀÇ °æ¿ìÀÇ¼ö 4
-			// 2+2 => 2ÀÇ °æ¿ìÀÇ ¼ö 2
-			// 3+1 => 1ÀÇ °æ¿ìÀÇ ¼ö 1
-			// 3°³ÀÇ °æ¿ì·Î Âõ¾î¼­ ³ª¸ÓÁö °æ¿ìÀÇ ¼ö ±¸ÇÏ¸é µÊ
+			// 4ë¥¼ ì˜ˆë¡œ ë“¤ë©´
+			// 1+3 => 3ì˜ ê²½ìš°ì˜ìˆ˜ 4
+			// 2+2 => 2ì˜ ê²½ìš°ì˜ ìˆ˜ 2
+			// 3+1 => 1ì˜ ê²½ìš°ì˜ ìˆ˜ 1
+			// 3ê°œì˜ ê²½ìš°ë¡œ ì°¢ì–´ì„œ ë‚˜ë¨¸ì§€ ê²½ìš°ì˜ ìˆ˜ êµ¬í•˜ë©´ ë¨
 			for(int i=4; i<n+1; i++) {
 				arr[i] = arr[i-1]+arr[i-2]+arr[i-3];
 			}
