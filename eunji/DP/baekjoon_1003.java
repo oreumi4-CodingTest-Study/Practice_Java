@@ -3,10 +3,10 @@ import java.io.*;
 public class baekjoon_1003 {
 	static int T;
 	static int[][] answer;
-	// ±ÔÄ¢ 1,2(2) 2,3(3) 3,5(4)ÀÎ¤¤°É º¸´Ï °¢°¢ÀÇ 0,1ÀÇ °³¼öµµ ÇÇº¸³ªÄ¡¿Í °°Àº ±ÔÄ¢
+	// ê·œì¹™ 1,2(2) 2,3(3) 3,5(4)ì¸ã„´ê±¸ ë³´ë‹ˆ ê°ê°ì˜ 0,1ì˜ ê°œìˆ˜ë„ í”¼ë³´ë‚˜ì¹˜ì™€ ê°™ì€ ê·œì¹™
 	
 	public static void main(String[] args) throws IOException{
-		//ÇÇº¸³ªÄ¡ ÇÔ¼ö¿¡¼­ 0°ú 1ÀÌ °¢°¢ ¸î¹ø Ãâ·ÂµÇ´ÂÁö ±¸ÇÏ±â
+		//í”¼ë³´ë‚˜ì¹˜ í•¨ìˆ˜ì—ì„œ 0ê³¼ 1ì´ ê°ê° ëª‡ë²ˆ ì¶œë ¥ë˜ëŠ”ì§€ êµ¬í•˜ê¸°
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		T = Integer.parseInt(br.readLine());
 		answer = new int[T][2];
