@@ -1,6 +1,8 @@
 import java.util.*;
 import java.io.*;
-
+// 백준 9251 : LCS
+// 골드 5
+// 두 수열이 주어졌을 때, 모두의 부분 수열이 되는 수열 중 가장 긴 것을 찾는 문제
 public class baekjoon_9251 {
 	static char[] a;
 	static char[] b;
