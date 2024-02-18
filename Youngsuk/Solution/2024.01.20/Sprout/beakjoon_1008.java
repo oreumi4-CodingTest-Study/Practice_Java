@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+class beakjoon_1008 {
 
     public static void main(String args[]) {
 
