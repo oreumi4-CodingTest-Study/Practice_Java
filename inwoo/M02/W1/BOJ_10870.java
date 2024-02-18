@@ -1,4 +1,4 @@
-package M02.W3;
+package M02.W1;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

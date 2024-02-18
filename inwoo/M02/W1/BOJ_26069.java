@@ -1,7 +1,6 @@
-package M02.W3;
+package M02.W1;
 
 import java.io.*;
-import java.util.Collection;
 import java.util.HashMap;
 
 public class BOJ_26069 {
@@ -23,9 +22,9 @@ public class BOJ_26069 {
                 }
             }
 
-            // µÑ Áß ÇÑ »ç¶÷ÀÌ¶óµµ ÃãÀ» Ãß°í ÀÖÀ¸¸é
+            // ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ì¶ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
             if (map.get(meeting[0]) || map.get(meeting[1])) {
-                // Ãã Àü¿°
+                // ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
                 map.put(meeting[0], true);
                 map.put(meeting[1], true);
             }
