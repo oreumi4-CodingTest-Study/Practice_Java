@@ -32,6 +32,7 @@ public class baekjoon_11055 {
                 }
             }
         }
+
         System.out.println(result);
     }
 }
