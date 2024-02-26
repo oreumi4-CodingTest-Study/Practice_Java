@@ -1,4 +1,4 @@
-package fibonacci;
+package DP;
 import java.io.*;
 public class baekjoon_1003 {
 	static int T;
