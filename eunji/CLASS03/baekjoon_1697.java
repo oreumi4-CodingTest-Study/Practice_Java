@@ -13,7 +13,7 @@ import java.util.StringTokenizer;
 
 public class baekjoon_1697 {
     static int N,K;
-    static int visited[] = new int[100001];
+    static int[] visited = new int[100001];
     public static void main(String[] args) throws IOException{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine()," ");
@@ -25,10 +25,9 @@ public class baekjoon_1697 {
     static int bfs(int node){
         Queue<Integer> q = new LinkedList<>();
         q.add(node);
-        int index = node;
         int n = 0;
-        visited[index]=1; // 방문 배열의 value 값 -> count
-        while(q.isEmpty() == false){
+        visited[node]=1; // 방문 배열의 value 값 -> count
+        while(!q.isEmpty()){
             n = q.remove();
             if(n==K){
                 return visited[n]-1;
