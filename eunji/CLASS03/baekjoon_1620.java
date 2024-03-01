@@ -24,7 +24,6 @@ public class baekjoon_1620 {
             String pName = br.readLine();
             poketmonMap.put(i,pName);
             reversePoketmonMap.put(pName,i);
-
         }
         for(int i = 0; i < M; i++){
             String str = br.readLine();
@@ -35,8 +34,6 @@ public class baekjoon_1620 {
                 Integer numberValue = reversePoketmonMap.get(str);
                 System.out.println(numberValue);
             }
-
         }
-
     }
 }
