@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class SolutionWordChange {
     static Queue<String> queue = new LinkedList<String>();
     static boolean[] visited;
     

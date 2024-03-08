@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+ class SolutionHindex {
     public int solution(int[] citations) {
         int answer = 0;
         List<Integer> cList = new ArrayList<>();
