@@ -3,6 +3,13 @@ package M03.W3;
 import java.util.*;
 
 public class PGS_달리기_경주 {
+    public static void main(String[] args) {
+        String[] players = {"mumu", "soe", "poe", "kai", "mine"};
+        String[] callings = {"kai", "kai", "mine", "mine"};
+
+        System.out.println(Arrays.toString(new PGS_달리기_경주().solution(players, callings)));
+    }
+
     public String[] solution(String[] players, String[] callings) {
         Map<String, Integer> map = new HashMap<>();
         int n = players.length;
